@@ -1,0 +1,7 @@
+venv
+build
+.env
+*.pyc
+*.swp
+setting.py
+*.csv
