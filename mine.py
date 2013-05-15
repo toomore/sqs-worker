@@ -7,7 +7,7 @@ from datetime import datetime
 aws = connect_to_region(setting.AWSREGION, aws_access_key_id=setting.AWSID, aws_secret_access_key=setting.AWSPWD)
 print aws.get_all_queues()
 
-q = aws.get_queue('twilio_coscup')
+q = aws.get_queue(settin.QUEUE_NAME)
 print q.count()
 
 m = q.new_message(str(datetime.now()))
